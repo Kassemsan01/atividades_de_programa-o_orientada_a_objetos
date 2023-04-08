@@ -4,9 +4,15 @@ private String farinha;
 private double preco;
 private static String pao;
 
-cadastro_coisas_padaria(String forno, String farinha, double preco){
+public void setForno(String forno){
     this.forno = forno;
+}
+
+public void setFarinha(String farinha){
     this.farinha = farinha;
+}
+
+public void setPreco(double preco){
     this.preco = preco;
 }
 
@@ -14,10 +20,20 @@ static{
     pao = "pão de queijo";
 }
 
-public void mostrarpadaria(){
-    System.out.println("\n" + "Forno:" + "\t" + forno + "\n" +
-    "Farinha:" + "\t" + farinha + "\n" + "Preço:" + "\t" + preco + "\n" +
-    "Pão:" + "\t" + pao);
+public String getForno(){
+    return forno;
+}
+
+public String getFarinha(){
+    return farinha;
+}
+
+public double getpreco(){
+    return preco;
+}
+
+public void mostrarpao(){
+    System.out.println("Pão:" + pao);
 }
 
 }
